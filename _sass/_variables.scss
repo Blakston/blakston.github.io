@@ -1,4 +1,3 @@
-
 //
 // VARIABLES
 //
@@ -6,17 +5,17 @@
 // Colors
 $blue: #4183C4;
 
-// Grays
+// Grays - updated for dark theme
 $black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$darkerGray: #dddddd;   // Changed to light color for headings
+$darkGray: #b8bcbd;     // Changed to main text color
+$gray: #b8bcbd;         // Changed to match text color
+$lightGray: #444;       // Changed to dark color for borders
+$white: #1E1F21;        // Changed to dark background color
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$helvetica: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$helveticaNeue: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
 
 // Mobile breakpoints
