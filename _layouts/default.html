@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>Meridian 59™ Resurgence</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
 
     {% include meta.html %}
 
@@ -19,22 +20,25 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/">Patch Notes</a>
           </nav>
         </header>
       </div>
     </div>
 
     <div id="main" role="main" class="container">
+      <!-- Centered Image with Link -->
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="https://m59.online" target="_blank">
+          <img 
+            src="https://m59.online/images/pic01.jpg" 
+            alt="Meridian 59 Resurgence Banner" 
+            style="max-width: 100%; height: auto;"
+            onerror="this.onerror=null; this.src='fallback-image.jpg';"
+          >
+        </a>
+      </div>
       {{ content }}
     </div>
 
