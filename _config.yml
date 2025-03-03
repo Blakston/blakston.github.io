@@ -78,3 +78,9 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+plugins:
+  - jekyll-paginate
+
+paginate: 2  # Number of posts per page
+paginate_path: "/page:num/"
