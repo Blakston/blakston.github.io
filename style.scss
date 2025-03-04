@@ -150,6 +150,7 @@ img {
 //
 .wrapper-masthead {
   margin-bottom: 50px;
+  padding-top: 70px; // Adjust this value based on the height of your navigation banner
 }
 
 .masthead {
@@ -205,6 +206,138 @@ nav {
       margin: 0 10px;
       color: #8e8e8e; // Gray for mobile nav links
     }
+  }
+}
+
+// NAVIGATION STYLES
+.menu {
+  background-color: #2A2B2D; // Dark background for the menu
+  border-bottom: 1px solid #444; // Dark gray border
+  padding: 10px 0;
+  position: fixed; // Make the menu fixed
+  top: 0; // Stick it to the top of the page
+  width: 100%; // Make it span the full width
+  z-index: 1000; // Ensure it stays above other content
+}
+
+.container.clearfix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo img {
+  height: 50px; // Adjust as needed
+  text-align: left;
+}
+
+#nav {
+  float: right;
+  text-align: right;
+}
+
+.navigation {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.navigation {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a, .navigation li {
+  float: left;
+  text-align: left;
+  text-transform: uppercase;
+  background: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #b8b7b7;
+}
+
+.navigation a:hover {
+  color: #ff7d04;
+}
+
+.navigation li:first-child {
+  margin-left: 0;
+}
+
+.navigation li:hover,
+.navigation .active {
+  cursor: pointer;
+  background: url(../images/menu_h2.png) no-repeat center;
+  border-bottom: 3px solid #d30311;
+  color: #fff;
+}
+
+.btn_dropdown {
+  position: relative;
+  z-index: 9999;
+  display: none;
+  cursor: pointer;
+  background: #fff;
+  margin: 20px 3px 0 0;
+  width: 140px;
+  height: 36px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  color: #3e3e3e;
+  border-radius: 5px;
+}
+
+.btn_dropdown:hover {
+  color: #3e3e3e;
+}
+
+@media only screen and (max-width: 766px) {
+  .navigation a, .navigation li {
+    float: left;
+    margin-left: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    background: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #b8b7b7;
+  }
+
+  .navigation a:hover {
+    color: #ff7d04;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .navigation a, .navigation li {
+    float: left;
+    text-align: left;
+    padding: 28px 0 25px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    background: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #b8b7b7;
+  }
+
+  .navigation a:hover {
+    cursor: pointer;
+    background: url(../images/menu_h2.png) no-repeat center;
+    border-bottom: 3px solid #d30311;
+    color: #fff;
   }
 }
 
