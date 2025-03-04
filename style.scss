@@ -54,11 +54,11 @@ p {
   margin: 15px 0;
 }
 a {
-  color: $blue;
+  color: $gray;
   text-decoration: none;
   cursor: pointer;
   &:hover, &:active {
-    color: lighten($blue, 15%);
+    color: lighten($gray, 15%);
   }
 }
 ul, ol {
@@ -187,7 +187,7 @@ nav {
     letter-spacing: 1px;
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $gray;
     }
   }
 }
