@@ -82,5 +82,5 @@ exclude:
 plugins:
   - jekyll-paginate
 
-paginate: 2  # Number of posts per page
+paginate: 3  # Number of posts per page
 paginate_path: "/page:num/"
